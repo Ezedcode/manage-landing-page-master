@@ -11,6 +11,9 @@ const Header = () => {
       <img src={Logo} alt="logo" />
       <Navbar />
       <Button id="Get Started" />
+      <C.Img top="-10" left="48">
+        <img src={Img} alt="background img" />
+      </C.Img>
     </C.Container>
   );
 };

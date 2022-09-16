@@ -8,6 +8,10 @@ const GlobalStyles = createGlobalStyle`
     font-size: 16px;
     font-family: Be Vietnam Pro;
   } 
+
+  body {
+    overflow-x: hidden;
+  }
 `;
 
 export default GlobalStyles;
