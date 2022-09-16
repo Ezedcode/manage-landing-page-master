@@ -4,12 +4,10 @@ const GlobalStyles = createGlobalStyle`
   * {
     margin: 0;
     padding: 0;
-  }
-
-  body {
-    font-family: Be Vietnam Pro;
+    border: none;
     font-size: 16px;
-  }
+    font-family: Be Vietnam Pro;
+  } 
 `;
 
 export default GlobalStyles;
