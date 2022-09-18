@@ -2,14 +2,19 @@ import styled from "styled-components";
 
 export const Button = styled.button`
   padding: 12px 25px;
-  color: hsl(0, 0%, 98%);
-  background: hsl(12, 88%, 59%);
+  color: ${(props) => props.color};
+  background: ${(props) => props.background};
   border-radius: 20px;
-  box-shadow: 0px 5px 5px hsl(12, 88%, 59%, 0.5);
+  box-shadow: ${(props) =>
+    props.colorBtn === "red" ? "0px 5px 5px hsl(12, 88%, 59%, 0.5)" : "none"};
   cursor: pointer;
   transition: 0.5s;
   &:hover {
-    background: hsl(13, 95%, 70%);
-    box-shadow: 0px 5px 5px hsl(13, 95%, 70%, 0.5);
+    ${(props) =>
+      props.colorBtn === "red"
+        ? "background-color:hsl(13, 95%, 70%)"
+        : "color:hsl(13, 95%, 70%)"};
+    box-shadow: ${(props) =>
+      props.colorBtn === "red" ? "0px 5px 5px hsl(13, 95%, 70%, 0.5)" : "none"};
   }
 `;

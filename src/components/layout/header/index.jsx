@@ -10,8 +10,13 @@ const Header = () => {
     <C.Container>
       <img src={Logo} alt="logo" />
       <Navbar />
-      <Button id="Get Started" />
-      <C.Img top="-10" left="48">
+      <Button
+        id="Get Started"
+        color="hsl(0, 0%, 98%)"
+        background="hsl(12, 88%, 59%)"
+        colorBtn="red"
+      />
+      <C.Img top="-10" left="50">
         <img src={Img} alt="background img" />
       </C.Img>
     </C.Container>

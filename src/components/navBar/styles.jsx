@@ -7,7 +7,7 @@ export const NavBar = styled.nav`
 
   a {
     color: hsl(228, 39%, 23%);
-    padding: 0 20px;
+    padding: 0 12px;
     text-decoration: none;
   }
 
