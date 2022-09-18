@@ -16,7 +16,7 @@ const Header = () => {
         background="hsl(12, 88%, 59%)"
         colorBtn="red"
       />
-      <C.Img top="-10" left="50">
+      <C.Img top="-10" left="52" position="absolute">
         <img src={Img} alt="background img" />
       </C.Img>
     </C.Container>

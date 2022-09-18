@@ -1,7 +1,7 @@
 import React from "react";
-import Footer from "./components/layout/footer";
+import Home from "./components/pages/home/index";
 import Header from "./components/layout/header";
-import Main from "./components/layout/main";
+import Footer from "./components/layout/footer";
 import * as C from "./styles/styles";
 import GlobalStyles from "./styles/global";
 
@@ -10,7 +10,7 @@ const App = () => {
     <>
       <C.Container>
         <Header />
-        <Main />
+        <Home />
       </C.Container>
       <Footer />
       <GlobalStyles />

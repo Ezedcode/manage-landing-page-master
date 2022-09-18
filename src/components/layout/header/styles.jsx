@@ -10,12 +10,8 @@ export const Container = styled.div`
 
 export const Img = styled.div`
   position: absolute;
-  width: 50vw;
   top: ${(props) => props.top}em;
   left: ${(props) => props.left}%;
   right: ${(props) => props.right}%;
   z-index: -1;
-  img {
-    width: 65vw;
-  }
 `;
