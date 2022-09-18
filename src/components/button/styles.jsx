@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 export const Button = styled.button`
+  height: 43px;
   padding: 12px 25px;
   color: ${(props) => props.color};
   background: ${(props) => props.background};
@@ -13,7 +14,7 @@ export const Button = styled.button`
     ${(props) =>
       props.colorBtn === "red"
         ? "background-color:hsl(13, 95%, 70%)"
-        : "color:hsl(13, 95%, 70%)"};
+        : "color: hsl(227, 12%, 61%);"};
     box-shadow: ${(props) =>
       props.colorBtn === "red" ? "0px 5px 5px hsl(13, 95%, 70%, 0.5)" : "none"};
   }

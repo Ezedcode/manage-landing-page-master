@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import bck from "../../../img/bg-simplify-section-desktop.svg";
 
 export const Container = styled.div`
   h1,
@@ -12,6 +13,7 @@ export const Container = styled.div`
   p {
     color: hsl(227, 12%, 61%);
     padding: 2em 0;
+    line-height: 1.7em;
   }
 `;
 
@@ -19,12 +21,10 @@ export const IllustrationIntro = styled.section`
   width: 80%;
   margin: 7em auto;
   display: flex;
+  align-items: center;
+  justify-content: space-between;
   h1 {
-    margin-top: 1.5em;
     font-size: 3.3em;
-  }
-  p {
-    width: 22em;
   }
 `;
 
@@ -33,17 +33,33 @@ export const AboutManage = styled.section`
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
-  h2 {
-    width: 12em;
-  }
-  p {
-    width: 22em;
-  }
 `;
 
-export const WhatSaid = styled.section``;
+export const WhatSaid = styled.section`
+  width: 100%;
+  margin: 7em auto;
+  text-align: center;
+`;
 
-export const Simply = styled.section``;
+export const Simplify = styled.section`
+  width: 100%;
+  height: 13em;
+  background-color: hsl(12, 88%, 59%);
+  background-image: url(${bck});
+  background-repeat: no-repeat;
+  background-position: 22em -9em;
+  div {
+    width: 80%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    h2 {
+      color: hsl(0, 0%, 98%);
+    }
+  }
+`;
 
 export const Img = styled.div``;
 

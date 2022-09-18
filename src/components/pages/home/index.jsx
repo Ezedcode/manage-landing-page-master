@@ -9,10 +9,19 @@ const Home = () => {
       <C.Container>
         <C.IllustrationIntro>
           <div>
-            <h1>Bring everyone together to build better products.</h1>
+            <h1>
+              Bring everyone
+              <br />
+              together to build
+              <br />
+              better products.
+            </h1>
             <p>
-              Manage makes it simple for software teams to plan day-to-day tasks
-              while keeping the larger team goals in view.
+              Manage makes it simple for software teams
+              <br />
+              to plan day-to-day tasks while keeping the
+              <br />
+              larger team goals in view.
             </p>
             <Button
               id="Get Started"
@@ -27,11 +36,19 @@ const Home = () => {
         </C.IllustrationIntro>
         <C.AboutManage>
           <div>
-            <h2>What's different about Manage?</h2>
+            <h2>
+              What's different about
+              <br />
+              Manage?
+            </h2>
             <p>
-              Manage provides all the functionality your team needs, without the
-              complexity. Our software is tailor-made for modern digital product
-              teams.
+              Manage provides all the functionality your
+              <br />
+              team needs, without the complexity. Our
+              <br />
+              software is tailor-made for modern digital
+              <br />
+              product teams.
             </p>
           </div>
           <div>
@@ -77,6 +94,30 @@ const Home = () => {
             </C.List>
           </div>
         </C.AboutManage>
+        <C.WhatSaid>
+          <h2>What they've said</h2>
+          <p>slide</p>
+          <Button
+            id="Get Started"
+            color="hsl(0, 0%, 98%)"
+            background="hsl(12, 88%, 59%)"
+            colorBtn="red"
+          />
+        </C.WhatSaid>
+        <C.Simplify>
+          <div>
+            <h2>
+              Simplify how your team <br />
+              works today.
+            </h2>
+            <Button
+              id="Get Started"
+              color="hsl(12, 88%, 59%)"
+              background="hsl(0, 0%, 98%)"
+              colorBtn="white"
+            />
+          </div>
+        </C.Simplify>
       </C.Container>
     </>
   );
