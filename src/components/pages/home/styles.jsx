@@ -47,7 +47,7 @@ export const Simplify = styled.section`
   background-color: hsl(12, 88%, 59%);
   background-image: url(${bck});
   background-repeat: no-repeat;
-  background-position: 22em -9em;
+  background-position: right -9em;
   div {
     width: 80%;
     height: 100%;
