@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   margin: 7em auto 4em auto;
-  transform: translateX(-30%);
+  transform: translateX(-50%);
   div {
     width: 36em;
     margin: 0 1em;
