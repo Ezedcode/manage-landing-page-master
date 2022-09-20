@@ -7,7 +7,7 @@ export const Button = styled.button`
   background: ${(props) => props.background};
   border-radius: 20px;
   box-shadow: ${(props) =>
-    props.box === "true" ? "0px 5px 5px hsl(12, 88%, 59%, 0.5)" : "none"};
+    props.boxShadow === "true" ? "0px 5px 5px hsl(12, 88%, 59%, 0.5)" : "none"};
   cursor: pointer;
   transition: 0.5s;
   &:hover {
@@ -16,7 +16,7 @@ export const Button = styled.button`
         ? "background-color:hsl(13, 95%, 70%)"
         : "color: hsl(227, 12%, 61%);"};
     box-shadow: ${(props) =>
-      props.boxShadow === "red"
+      props.boxShadow === "true"
         ? "0px 5px 5px hsl(13, 95%, 70%, 0.5)"
         : "none"};
   }

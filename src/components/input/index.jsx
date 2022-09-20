@@ -9,8 +9,8 @@ const Input = () => {
         id="Go"
         color="hsl(0, 0%, 98%)"
         background="hsl(12, 88%, 59%)"
-        boxShadow="red"
         colorBtn="red"
+        boxShadow="false"
       />
     </div>
   );

@@ -30,6 +30,7 @@ export const Container = styled.div`
       justify-content: space-between;
       svg {
         font-size: 1.5em;
+        padding-right: 0.6em;
       }
     }
     a {

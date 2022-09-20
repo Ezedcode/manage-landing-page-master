@@ -22,7 +22,7 @@ const Footer = () => {
       <C.Container>
         <div>
           <div className="container">
-            <div>
+            <div className="logo">
               <img src={Logo} alt="logo" />
             </div>
             <div className="socialMedia">

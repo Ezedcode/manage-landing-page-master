@@ -29,6 +29,7 @@ const Home = () => {
               color="hsl(0, 0%, 98%)"
               background="hsl(12, 88%, 59%)"
               colorBtn="red"
+              boxShadow="true"
             />
           </div>
           <C.Img>
@@ -103,6 +104,7 @@ const Home = () => {
             color="hsl(0, 0%, 98%)"
             background="hsl(12, 88%, 59%)"
             colorBtn="red"
+            boxShadow="true"
           />
         </C.WhatSaid>
         <C.Simplify>
@@ -116,7 +118,7 @@ const Home = () => {
               color="hsl(12, 88%, 59%)"
               background="hsl(0, 0%, 98%)"
               colorBtn="white"
-              boxShadow="true"
+              boxShadow="false"
             />
           </div>
         </C.Simplify>
