@@ -40,6 +40,7 @@ export const Container = styled.div`
     p {
       color: hsl(227, 12%, 61%);
       font-size: 10.5px;
+      text-align: end;
     }
     a:hover {
       color: hsl(12, 88%, 59%);

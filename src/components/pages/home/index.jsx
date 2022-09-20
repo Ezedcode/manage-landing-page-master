@@ -2,6 +2,9 @@ import React, { useState } from "react";
 import ImgIntro from "../../../img/illustration-intro.svg";
 import * as C from "./styles";
 import Button from "../../button";
+import ImgTablet from "../../../img/bg-tablet-pattern.svg";
+import * as S from "../../layout/header/styles";
+
 import SlidesWhatSaid from "../../slides";
 
 const Home = () => {
@@ -96,6 +99,9 @@ const Home = () => {
             </C.List>
           </div>
         </C.AboutManage>
+        <S.Img top="72" left="-32" position="">
+          <img src={ImgTablet} alt="background img" />
+        </S.Img>
         <C.WhatSaid>
           <h2>What they've said</h2>
           <SlidesWhatSaid />

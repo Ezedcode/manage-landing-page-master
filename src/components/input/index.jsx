@@ -1,10 +1,11 @@
 import React from "react";
+import * as C from "./styles";
 import Button from "../button";
 
 const Input = () => {
   return (
     <div>
-      Input
+      <C.Input type="email" placeholder="Updates in your inbox..." />
       <Button
         id="Go"
         color="hsl(0, 0%, 98%)"

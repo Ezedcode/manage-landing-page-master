@@ -2,11 +2,7 @@ import React from "react";
 import { BrowserRouter, Link } from "react-router-dom";
 import Input from "../../input";
 import Logo from "../../../img/logo.svg";
-/*import img1 from "../../../img/icon-facebook.svg";
-import img2 from "../../../img/icon-youtube.svg";
-import img3 from "../../../img/icon-twitter.svg";
-import img5 from "../../../img/icon-pinterest.svg";
-import img4 from "../../../img/icon-instagram.svg";*/
+
 import {
   FaFacebook,
   FaYoutube,
@@ -22,7 +18,7 @@ const Footer = () => {
       <C.Container>
         <div>
           <div className="container">
-            <div className="logo">
+            <div>
               <img src={Logo} alt="logo" />
             </div>
             <div className="socialMedia">
