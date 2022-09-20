@@ -15,6 +15,7 @@ const Header = () => {
         color="hsl(0, 0%, 98%)"
         background="hsl(12, 88%, 59%)"
         colorBtn="red"
+        boxShadow="true"
       />
       <C.Img top="-10" left="52" position="absolute">
         <img src={Img} alt="background img" />

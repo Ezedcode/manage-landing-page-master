@@ -4,7 +4,7 @@ export const ContainerItem = styled.div`
   display: flex;
   margin: 7em auto 4em auto;
   width: 555px;
-  background-color: red;
+  background-color: hsl(0, 0%, 98%);
   div {
     margin: auto;
   }

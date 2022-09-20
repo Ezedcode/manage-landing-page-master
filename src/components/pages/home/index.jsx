@@ -116,6 +116,7 @@ const Home = () => {
               color="hsl(12, 88%, 59%)"
               background="hsl(0, 0%, 98%)"
               colorBtn="white"
+              boxShadow="true"
             />
           </div>
         </C.Simplify>
