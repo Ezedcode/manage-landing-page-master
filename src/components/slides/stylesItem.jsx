@@ -1,20 +1,17 @@
 import styled from "styled-components";
-export const Container = styled.div`
-  display: flex;
-`;
+
 export const ContainerItem = styled.div`
   display: flex;
   margin: 7em auto 4em auto;
+  width: 555px;
+  background-color: red;
   div {
-    width: 36em;
-    margin: 0 1em;
-    background-color: hsl(0, 0%, 98%, 1.5);
+    margin: auto;
   }
   img {
     position: absolute;
     width: 6em;
-    top: 104.5em;
-    margin-bottom: 5em;
+    top: 4em;
     transform: translateX(-50%);
   }
   h3 {

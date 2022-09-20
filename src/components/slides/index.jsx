@@ -1,26 +1,37 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Img1 from "../../img/avatar-anisha.png";
 import Img2 from "../../img/avatar-ali.png";
 import Img3 from "../../img/avatar-richard.png";
 import Img4 from "../../img/avatar-shanai.png";
-import { Carousel } from "react-responsive-carousel";
+
+// Import Swiper React components
+import { Swiper, SwiperSlide } from "swiper/react";
+
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
+
+//import "./styles.css";
+
+// import required modules
+import { Pagination, Navigation } from "swiper";
+
 import Items from "./item";
-import * as C from "./styles";
+import * as C from "./stylesItem";
 
 const SlidesWhatSaid = () => {
-  const [Item, setItem] = useState([]);
-
   const listItems = [
     {
       img: Img1,
       name: "Anisha Li",
       text: (
         <p>
-          Manage has supercharged our team's workflow. The
+          "Manage has supercharged our team's workflow. The
           <br />
           ability to maintain visibility on larger milestones at all times
           <br />
-          keeps everyone motivated.
+          keeps everyone motivated."
         </p>
       ),
     },
@@ -64,12 +75,52 @@ const SlidesWhatSaid = () => {
       ),
     },
   ];
+
+  function getWindowSize() {
+    const { innerWidth, innerHeight } = window;
+    return { innerWidth, innerHeight };
+  }
+
+  const [windowSize, setWindowSize] = useState(getWindowSize());
+
+  useEffect(() => {
+    function handleWindowResize() {
+      setWindowSize(getWindowSize());
+    }
+
+    window.addEventListener("resize", handleWindowResize);
+
+    return () => {
+      window.removeEventListener("resize", handleWindowResize);
+    };
+  }, []);
+
   return (
-    <C.Container>
-      {listItems.map((item) => (
-        <Items img={item.img} name={item.name} text={item.text} />
-      ))}
-    </C.Container>
+    <>
+      <div>
+        <h2>Width: {windowSize.innerWidth}</h2>
+
+        <h2>Height: {windowSize.innerHeight}</h2>
+      </div>
+      <Swiper
+        slidesPerView={windowSize.innerWidth <= 1310 ? 2 : 3}
+        spaceBetween={windowSize.innerWidth <= 1310 ? 10 : 400}
+        slidesPerGroup={1}
+        loop={true}
+        loopFillGroupWithBlank={true}
+        pagination={{
+          clickable: true,
+        }}
+        navigation={true}
+        modules={[Pagination, Navigation]}
+      >
+        {listItems.map((item) => (
+          <SwiperSlide>
+            <Items img={item.img} name={item.name} text={item.text} />
+          </SwiperSlide>
+        ))}
+      </Swiper>
+    </>
   );
 };
 

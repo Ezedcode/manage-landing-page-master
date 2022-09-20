@@ -1,5 +1,5 @@
 import React from "react";
-import * as C from "./styles";
+import * as C from "./stylesItem";
 
 const Items = ({ img, name, text }) => {
   return (
@@ -7,7 +7,7 @@ const Items = ({ img, name, text }) => {
       <div>
         <img src={img} alt="img" />
         <h3>{name}</h3>
-        <p>{text}</p>
+        {text}
       </div>
     </C.ContainerItem>
   );
