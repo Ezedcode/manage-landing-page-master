@@ -1,16 +1,16 @@
 import React from "react";
 import * as C from "./styles";
 
-const SlideItem = ({ img, name, text }) => {
+const Items = ({ img, name, text }) => {
   return (
-    <C.Container>
+    <C.ContainerItem>
       <div>
         <img src={img} alt="img" />
         <h3>{name}</h3>
         <p>{text}</p>
       </div>
-    </C.Container>
+    </C.ContainerItem>
   );
 };
 
-export default SlideItem;
+export default Items;

@@ -1,8 +1,10 @@
 import styled from "styled-components";
-
 export const Container = styled.div`
+  display: flex;
+`;
+export const ContainerItem = styled.div`
+  display: flex;
   margin: 7em auto 4em auto;
-  transform: translateX(-50%);
   div {
     width: 36em;
     margin: 0 1em;
@@ -11,9 +13,9 @@ export const Container = styled.div`
   img {
     position: absolute;
     width: 6em;
-    top: -3.5em;
+    top: 104.5em;
     margin-bottom: 5em;
-    transform: translateX(-47%);
+    transform: translateX(-50%);
   }
   h3 {
     padding-top: 5em;
