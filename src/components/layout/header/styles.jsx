@@ -14,4 +14,7 @@ export const Img = styled.div`
   left: ${(props) => props.left}%;
   right: ${(props) => props.right}%;
   z-index: -1;
+  @media (max-width: 1024px) {
+    display: none;
+  }
 `;

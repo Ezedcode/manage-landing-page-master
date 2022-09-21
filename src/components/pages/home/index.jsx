@@ -58,9 +58,10 @@ const Home = () => {
           </div>
           <div>
             <C.List>
-              <C.Number>01</C.Number>
               <div>
-                <h3>Track company-wide progress</h3>
+                <h3>
+                  <C.Number>01</C.Number>Track company-wide progress
+                </h3>
                 <p>
                   See how your day-to-day tasks fit into the wider vision.
                   <br />
@@ -72,9 +73,10 @@ const Home = () => {
               </div>
             </C.List>
             <C.List>
-              <C.Number>02</C.Number>
               <div>
-                <h3>Advanced built-in reports</h3>
+                <h3>
+                  <C.Number>02</C.Number>Advanced built-in reports
+                </h3>
                 <p>
                   Set internal delivery estimates and track progress toward
                   company goals. Our customizable dashboard helps you <br />
@@ -85,9 +87,10 @@ const Home = () => {
               </div>
             </C.List>
             <C.List>
-              <C.Number>03</C.Number>
               <div>
-                <h3>Everything you need in one place</h3>
+                <h3>
+                  <C.Number>03</C.Number>Everything you need in one place
+                </h3>
                 <p>
                   Stop jumping from one service to another to <br />
                   Communicate, store files, track tasks and share

@@ -1,15 +1,17 @@
 import React from "react";
 import * as C from "./styles";
 
-const Button = ({ id, color, background, colorBtn, boxShadow }) => {
+const Button = (props) => {
   return (
     <C.Button
-      color={color}
-      background={background}
-      colorBtn={colorBtn}
-      boxShadow={boxShadow}
+      type={props.type}
+      color={props.color}
+      background={props.background}
+      colorBtn={props.colorBtn}
+      boxShadow={props.boxShadow}
+      onClick={props.onClick}
     >
-      {id}
+      {props.id}
     </C.Button>
   );
 };

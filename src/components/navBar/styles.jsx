@@ -14,4 +14,7 @@ export const NavBar = styled.nav`
   a:hover {
     color: hsl(227, 12%, 61%);
   }
+  @media (max-width: 1024px) {
+    display: none;
+  }
 `;

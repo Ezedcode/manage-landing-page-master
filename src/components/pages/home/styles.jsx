@@ -15,6 +15,8 @@ export const Container = styled.div`
     padding: 2em 0;
     line-height: 1.7em;
   }
+  width: 100vw;
+  margin: auto;
 `;
 
 export const IllustrationIntro = styled.section`
@@ -26,6 +28,10 @@ export const IllustrationIntro = styled.section`
   h1 {
     font-size: 3.3em;
   }
+  @media (max-width: 1024px) {
+    width: 100%;
+    flex-direction: column-reverse;
+  }
 `;
 
 export const AboutManage = styled.section`
@@ -33,6 +39,11 @@ export const AboutManage = styled.section`
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
+
+  @media (max-width: 1024px) {
+    width: 100%;
+    flex-direction: column;
+  }
 `;
 
 export const WhatSaid = styled.section`
@@ -80,5 +91,11 @@ export const List = styled.div`
   }
   p {
     width: 100%;
+    margin-left: 97px;
+  }
+  @media (max-width: 1024px) {
+    p {
+      margin-left: 0px;
+    }
   }
 `;
