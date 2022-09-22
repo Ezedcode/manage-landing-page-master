@@ -50,6 +50,9 @@ export const WhatSaid = styled.section`
   width: 100%;
   margin: 7em auto;
   text-align: center;
+  .btn {
+    margin-top: 31px;
+  }
 `;
 
 export const Simplify = styled.section`
@@ -66,9 +69,25 @@ export const Simplify = styled.section`
     display: flex;
     align-items: center;
     justify-content: space-between;
+    @media (max-width: 1024px) {
+      height: 13em;
+      width: 21em;
+      text-align: center;
+      flex-direction: column;
+    }
     h2 {
       color: hsl(0, 0%, 98%);
+      width: 12em;
+      @media (max-width: 1024px) {
+        width: 321px;
+      }
     }
+  }
+
+  @media (max-width: 1024px) {
+    height: 26em;
+    display: flex;
+    justify-content: center;
   }
 `;
 
@@ -96,6 +115,7 @@ export const List = styled.div`
   @media (max-width: 1024px) {
     p {
       margin-left: 0px;
+      width: 32px;
     }
   }
 `;

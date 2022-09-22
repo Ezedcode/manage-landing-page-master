@@ -17,11 +17,9 @@ const SlidesWhatSaid = () => {
       name: "Anisha Li",
       text: (
         <p>
-          "Manage has supercharged our team's workflow. The
-          <br />
-          ability to maintain visibility on larger milestones at all times
-          <br />
-          keeps everyone motivated."
+          "Manage has supercharged our team's workflow. The ability to maintain
+          visibility on larger milestones at all times keeps everyone
+          motivated."
         </p>
       ),
     },
@@ -30,11 +28,9 @@ const SlidesWhatSaid = () => {
       name: "Ali Bravo",
       text: (
         <p>
-          "We have been able to cancel so many other subscriptions
-          <br />
-          since using Manage. There is no more cross-Channel
-          <br />
-          confusion and everyone is much more focused"
+          "We have been able to cancel so many other subscriptions since using
+          Manage. There is no more cross-Channel confusion and everyone is much
+          more focused"
         </p>
       ),
     },
@@ -43,11 +39,9 @@ const SlidesWhatSaid = () => {
       name: "Richard Watts",
       text: (
         <p>
-          "Manage allows us to provide structs and process. It
-          <br />
-          keeps us organized and focused. I can't stop recommending
-          <br />
-          them to everyone I talk to!"
+          "Manage allows us to provide structs and process. It keeps us
+          organized and focused. I can't stop recommending them to everyone I
+          talk to!"
         </p>
       ),
     },
@@ -56,11 +50,9 @@ const SlidesWhatSaid = () => {
       name: "Shanai Gough",
       text: (
         <p>
-          "Their software allows us to track, manage and collaborate
-          <br />
-          on our projects from anywhere. It keeps the whole team in-
-          <br />
-          sync without being intrusive."
+          "Their software allows us to track, manage and collaborate on our
+          projects from anywhere. It keeps the whole team in- sync without being
+          intrusive."
         </p>
       ),
     },
@@ -89,7 +81,7 @@ const SlidesWhatSaid = () => {
     <>
       <Swiper
         slidesPerView={windowSize.innerWidth <= 1310 ? 1 : 3}
-        spaceBetween={400}
+        spaceBetween={350}
         slidesPerGroup={1}
         loop={true}
         loopFillGroupWithBlank={true}

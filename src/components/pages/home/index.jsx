@@ -108,20 +108,19 @@ const Home = () => {
         <C.WhatSaid>
           <h2>What they've said</h2>
           <SlidesWhatSaid />
-          <Button
-            id="Get Started"
-            color="hsl(0, 0%, 98%)"
-            background="hsl(12, 88%, 59%)"
-            colorBtn="red"
-            boxShadow="true"
-          />
+          <div className="btn">
+            <Button
+              id="Get Started"
+              color="hsl(0, 0%, 98%)"
+              background="hsl(12, 88%, 59%)"
+              colorBtn="red"
+              boxShadow="true"
+            />
+          </div>
         </C.WhatSaid>
         <C.Simplify>
           <div>
-            <h2>
-              Simplify how your team <br />
-              works today.
-            </h2>
+            <h2>Simplify how your team works today.</h2>
             <Button
               id="Get Started"
               color="hsl(12, 88%, 59%)"
