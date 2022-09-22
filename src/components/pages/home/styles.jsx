@@ -21,16 +21,31 @@ export const Container = styled.div`
 
 export const IllustrationIntro = styled.section`
   width: 80%;
-  margin: 7em auto;
+  margin: 62px auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
   h1 {
     font-size: 3.3em;
   }
+  p {
+    width: 341px;
+  }
   @media (max-width: 1024px) {
     width: 100%;
     flex-direction: column-reverse;
+
+    text-align: center;
+    div {
+      width: 80%;
+    }
+    h1 {
+      font-size: 35px;
+    }
+    p {
+      width: 299px;
+      margin: auto;
+    }
   }
 `;
 
@@ -41,14 +56,18 @@ export const AboutManage = styled.section`
   justify-content: space-between;
 
   @media (max-width: 1024px) {
+    text-align: center;
     width: 100%;
     flex-direction: column;
+    h2 {
+      font-size: 35px;
+    }
   }
 `;
 
 export const WhatSaid = styled.section`
   width: 100%;
-  margin: 7em auto;
+  margin: 62px auto;
   text-align: center;
   .btn {
     margin-top: 31px;
@@ -87,11 +106,22 @@ export const Simplify = styled.section`
   @media (max-width: 1024px) {
     height: 26em;
     display: flex;
+    justify-content: space-between;
     justify-content: center;
+
+    div {
+      height: 15em;
+    }
   }
 `;
 
-export const Img = styled.div``;
+export const Img = styled.div`
+  img {
+    @media (max-width: 1024px) {
+      width: 100%;
+    }
+  }
+`;
 
 export const Number = styled.span`
   margin-right: 25px;
@@ -109,13 +139,24 @@ export const List = styled.div`
     padding-top: 10px;
   }
   p {
-    width: 100%;
+    width: 28rem;
     margin-left: 97px;
   }
   @media (max-width: 1024px) {
+    justify-content: center;
+    width: 100%;
+    margin-left: 12px;
     p {
+      text-align: left;
       margin-left: 0px;
-      width: 32px;
+      width: 346px;
+    }
+    h3 {
+      width: 100vw;
+      text-align: left;
+      background-color: hsl(13, 100%, 96%);
+      padding: 12px 0px;
+      border-radius: 20px 0px 0px 20px;
     }
   }
 `;

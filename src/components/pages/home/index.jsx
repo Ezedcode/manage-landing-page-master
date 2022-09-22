@@ -21,11 +21,8 @@ const Home = () => {
               better products.
             </h1>
             <p>
-              Manage makes it simple for software teams
-              <br />
-              to plan day-to-day tasks while keeping the
-              <br />
-              larger team goals in view.
+              Manage makes it simple for software teams to plan day-to-day tasks
+              while keeping the larger team goals in view.
             </p>
             <Button
               id="Get Started"
@@ -41,11 +38,7 @@ const Home = () => {
         </C.IllustrationIntro>
         <C.AboutManage>
           <div>
-            <h2>
-              What's different about
-              <br />
-              Manage?
-            </h2>
+            <h2>What's different about Manage?</h2>
             <p>
               Manage provides all the functionality your
               <br />
@@ -63,12 +56,10 @@ const Home = () => {
                   <C.Number>01</C.Number>Track company-wide progress
                 </h3>
                 <p>
-                  See how your day-to-day tasks fit into the wider vision.
-                  <br />
-                  Go from tracking progress at the milestone level all the way
-                  done done to the smallest of details. Never lose sight of{" "}
-                  <br />
-                  the bigger picture again.
+                  See how your day-to-day tasks fit into the wider vision. Go
+                  from tracking progress at the milestone level all the way done
+                  done to the smallest of details. Never lose sight of the
+                  bigger picture again.
                 </p>
               </div>
             </C.List>
@@ -79,10 +70,8 @@ const Home = () => {
                 </h3>
                 <p>
                   Set internal delivery estimates and track progress toward
-                  company goals. Our customizable dashboard helps you <br />
-                  build out the reports you need to keep key stakeholders
-                  <br />
-                  informed.
+                  company goals. Our customizable dashboard helps you build out
+                  the reports you need to keep key stakeholders informed.
                 </p>
               </div>
             </C.List>
@@ -92,11 +81,9 @@ const Home = () => {
                   <C.Number>03</C.Number>Everything you need in one place
                 </h3>
                 <p>
-                  Stop jumping from one service to another to <br />
-                  Communicate, store files, track tasks and share
-                  <br /> documents. Manage offers an all-in-one team
-                  <br />
-                  productivity solution.
+                  Stop jumping from one service to another to Communicate, store
+                  files, track tasks and share documents. Manage offers an
+                  all-in-one team productivity solution.
                 </p>
               </div>
             </C.List>

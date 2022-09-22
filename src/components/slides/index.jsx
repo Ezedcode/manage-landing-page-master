@@ -3,18 +3,15 @@ import Img1 from "../../img/avatar-anisha.png";
 import Img2 from "../../img/avatar-ali.png";
 import Img3 from "../../img/avatar-richard.png";
 import Img4 from "../../img/avatar-shanai.png";
-import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
-import "swiper/css/pagination";
-import { Pagination, Navigation } from "swiper";
 
 import Items from "./item";
-
+import * as C from "./stylesItem";
+//Anisha Li
 const SlidesWhatSaid = () => {
   const listItems = [
     {
       img: Img1,
-      name: "Anisha Li",
+      name: "Get Started",
       text: (
         <p>
           "Manage has supercharged our team's workflow. The ability to maintain
@@ -78,30 +75,13 @@ const SlidesWhatSaid = () => {
   }, []);
 
   return (
-    <>
-      <Swiper
-        slidesPerView={windowSize.innerWidth <= 1310 ? 1 : 3}
-        spaceBetween={350}
-        slidesPerGroup={1}
-        loop={true}
-        loopFillGroupWithBlank={true}
-        pagination={{
-          clickable: true,
-        }}
-        navigation={windowSize.innerWidth <= 1310 ? false : true}
-        modules={
-          windowSize.innerWidth <= 1310
-            ? [Pagination, Navigation]
-            : [Navigation]
-        }
-      >
+    <C.Container>
+      <div className="container">
         {listItems.map((item) => (
-          <SwiperSlide>
-            <Items img={item.img} name={item.name} text={item.text} />
-          </SwiperSlide>
+          <Items img={item.img} name={item.name} text={item.text} />
         ))}
-      </Swiper>
-    </>
+      </div>
+    </C.Container>
   );
 };
 

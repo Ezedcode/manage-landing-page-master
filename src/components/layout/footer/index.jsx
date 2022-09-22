@@ -1,7 +1,6 @@
 import React from "react";
 import { BrowserRouter, Link } from "react-router-dom";
 import Input from "../../input";
-import Logo from "../../../img/logo.svg";
 
 import {
   FaFacebook,
@@ -11,6 +10,7 @@ import {
   FaInstagram,
 } from "react-icons/fa";
 import * as C from "./styles";
+import Logo from "../../../img/logo";
 
 const Footer = () => {
   return (
@@ -21,7 +21,7 @@ const Footer = () => {
           <div>
             <div className="container">
               <div>
-                <img src={Logo} alt="logo" />
+                <Logo logo="white" />
               </div>
               <div className="socialMedia">
                 <Link>

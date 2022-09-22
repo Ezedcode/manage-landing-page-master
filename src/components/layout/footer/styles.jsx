@@ -11,6 +11,7 @@ export const Container = styled.div`
     margin: auto;
     display: flex;
     flex-direction: column;
+
     p {
       top: -26px;
       width: 19em;
@@ -20,7 +21,7 @@ export const Container = styled.div`
       @media (max-width: 1024px) {
         width: 100%;
         justify-content: space-around;
-        top: 488px;
+        top: 414px;
       }
     }
     @media (max-width: 1024px) {

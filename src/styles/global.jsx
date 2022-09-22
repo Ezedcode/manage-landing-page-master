@@ -5,7 +5,7 @@ const GlobalStyles = createGlobalStyle`
     margin: 0;
     padding: 0;
     border: none;
-    font-size: 16px;
+    font-size: 14px;
     font-family: Be Vietnam Pro;
   } 
 

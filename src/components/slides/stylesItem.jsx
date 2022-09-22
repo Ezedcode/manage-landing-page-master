@@ -1,24 +1,36 @@
 import styled from "styled-components";
-
-export const ContainerItem = styled.div`
+export const Container = styled.div`
+  width: 100%;
+  height: 23rem;
+  background-color: red;
   display: flex;
-  position: relative;
-  right: 154px;
-  margin: 7em auto 3em auto;
-  padding-bottom: 2em;
+  align-items: center;
+  justify-content: center;
+  overflow: scroll;
+  .container {
+    width: 80%;
+    background-color: blue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+`;
+export const ContainerItem = styled.div`
   width: 555px;
+  height: 227px;
   background-color: hsl(0, 0%, 98%);
+  display: flex;
+  align-items: center;
   div {
     margin: auto;
   }
-  img {
-    position: absolute;
-    width: 6em;
-    top: -49px;
-    transform: translateX(-50%);
-  }
   h3 {
-    padding-top: 5em;
+    margin-top: 21px;
+  }
+  img {
+    width: 6em;
+    margin-top: -5.5em;
+    margin-bottom: 0.5em;
   }
   p {
     width: 452px;
