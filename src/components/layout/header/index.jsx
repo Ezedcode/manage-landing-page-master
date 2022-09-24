@@ -20,10 +20,12 @@ const Header = () => {
       setShowNavBar("active");
     } else {
       setCloseMenu("closeMenu");
-      setShowNavBar(undefined);
+      setShowNavBar("closeNavBar");
+
       setTimeout(() => {
         setShowMenu(false);
         setCloseMenu(undefined);
+        setShowNavBar(undefined);
       }, 1 * 1000); // 1second
     }
   };
@@ -52,7 +54,7 @@ const Header = () => {
             className={`closeBtn ${closeMenu}`}
           />
         ) : (
-          <img src={HamburgerBtn} alt="menuBtn" className="hamburgerBtn" />
+          <img src={HamburgerBtn} alt="menuBtn" className={"hamburgerBtn"} />
         )}
       </button>
 

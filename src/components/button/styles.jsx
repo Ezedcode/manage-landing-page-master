@@ -14,7 +14,7 @@ export const Button = styled.button`
     ${(props) =>
       props.colorBtn === "red"
         ? "background-color:hsl(13, 95%, 70%)"
-        : "color: hsl(227, 12%, 61%);"};
+        : "color: hsl(227, 12%, 61%)"};
     box-shadow: ${(props) =>
       props.boxShadow === "true"
         ? "0px 5px 5px hsl(13, 95%, 70%, 0.5)"

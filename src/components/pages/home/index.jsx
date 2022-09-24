@@ -89,9 +89,9 @@ const Home = () => {
             </C.List>
           </div>
         </C.AboutManage>
-        <S.Img top="72" left="-32" position="">
+        <div className={"img"}>
           <img src={ImgTablet} alt="background img" />
-        </S.Img>
+        </div>
         <C.WhatSaid>
           <h2>What they've said</h2>
           <SlidesWhatSaid />

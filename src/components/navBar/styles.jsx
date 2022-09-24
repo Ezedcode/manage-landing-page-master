@@ -1,12 +1,23 @@
 import styled, { keyframes } from "styled-components";
-const NavbarAnimation = keyframes`
+const ShowNavbar = keyframes`
   from {
-    top: 1rem;
+    top: 0px;
     opacity: 0;
   }
   to {
-    top: 112px;
+    top: 44px;
     opacity: 1;
+  }
+`;
+
+const CloseNavbar = keyframes`
+  from {
+    top: 44px;
+    opacity: 1;
+  }
+  to {
+    top: 0px;
+    opacity: 0;
   }
 `;
 export const NavBar = styled.nav`
@@ -27,13 +38,14 @@ export const NavBar = styled.nav`
   @media (max-width: 1024px) {
     display: ${(props) => props.display};
     position: absolute;
-    top: 112px;
+    top: 68px;
     left: 0%;
     transition: translate(-50%, -50%);
     width: 100%;
-    animation: ${NavbarAnimation} 1s;
-    .active {
-      top: 5rem;
+    .active,
+    .closeNavBar {
+      position: relative;
+      top: 44px;
       height: 16rem;
       width: 80%;
       border-radius: 5px;
@@ -45,6 +57,13 @@ export const NavBar = styled.nav`
       align-items: center;
       justify-content: space-around;
       margin: 0 auto;
+    }
+
+    .active {
+      animation: ${ShowNavbar} 1s;
+    }
+    .closeNavBar {
+      animation: ${CloseNavbar} 1s !important;
     }
   }
 `;

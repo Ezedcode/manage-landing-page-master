@@ -7,6 +7,7 @@ const showMenu = keyframes`
 
 const closeMenu = keyframes`
   to {
+    opacity: 0;
     transform: rotate(-360deg);
   }
 `;
@@ -41,10 +42,12 @@ export const Container = styled.div`
       display: block;
     }
   }
+  @media (max-width: 1024px) {
+    width: 255px;
+  }
 `;
 
 export const Img = styled.div`
-  display: none;
   position: absolute;
   top: ${(props) => props.top}em;
   left: ${(props) => props.left}%;

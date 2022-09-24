@@ -5,6 +5,9 @@ export const Container = styled.div`
   background-color: hsl(233, 12%, 13%);
   display: flex;
   align-items: center;
+  margin: 0 auto;
+  max-width: 1440px;
+
   & > div {
     width: 80%;
     height: 53%;
@@ -60,7 +63,7 @@ export const Container = styled.div`
       @media (max-width: 1024px) {
         width: 100%;
         height: 54em;
-        margin-top: 65px;
+        margin-top: 46px;
         justify-content: space-around;
       }
     }
@@ -74,6 +77,10 @@ export const Container = styled.div`
         @media (max-width: 1024px) {
           font-size: 2.5em;
         }
+      }
+      @media (max-width: 1024px) {
+        width: 91%;
+        margin: 0 auto;
       }
     }
     a {
@@ -90,6 +97,7 @@ export const Container = styled.div`
   }
 
   @media (max-width: 1024px) {
+    width: 375px;
     height: 37em;
     div {
       text-align: center;

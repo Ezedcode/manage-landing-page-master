@@ -17,6 +17,16 @@ export const Container = styled.div`
   }
   width: 100vw;
   margin: auto;
+  max-width: 1440px;
+  .img {
+    position: absolute;
+    top: 72em;
+    left: -34rem;
+    z-index: -1;
+  }
+  @media (max-width: 1024px) {
+    width: 375px;
+  }
 `;
 
 export const IllustrationIntro = styled.section`
@@ -144,7 +154,7 @@ export const List = styled.div`
   }
   @media (max-width: 1024px) {
     justify-content: center;
-    width: 100%;
+    width: 375px;
     margin-left: 12px;
     p {
       text-align: left;
@@ -152,7 +162,7 @@ export const List = styled.div`
       width: 346px;
     }
     h3 {
-      width: 100vw;
+      width: 375px;
       text-align: left;
       background-color: hsl(13, 100%, 96%);
       padding: 12px 0px;
