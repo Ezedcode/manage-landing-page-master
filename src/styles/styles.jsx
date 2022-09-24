@@ -9,4 +9,8 @@ export const Container = styled.div`
   flex-direction: column;
   margin: 0 auto;
   max-width: 1440px;
+  overflow-x: hidden;
+  @media (max-width: 1024px) {
+    width: 375px;
+  }
 `;

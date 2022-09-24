@@ -16,7 +16,7 @@ export const Container = styled.div`
     flex-direction: column;
 
     p {
-      top: -26px;
+      top: -16px;
       width: 19em;
       align-self: end;
       position: relative;
@@ -53,7 +53,7 @@ export const Container = styled.div`
       flex-direction: column;
       text-align: left;
       a {
-        line-height: 38px;
+        line-height: 20px;
       }
     }
     .navBar {

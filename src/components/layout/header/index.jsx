@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React from "react";
 import Navbar from "../../navBar";
 
 import HamburgerBtn from "../../../img/icon-hamburger.svg";
@@ -26,7 +26,7 @@ const Header = () => {
         setShowMenu(false);
         setCloseMenu(undefined);
         setShowNavBar(undefined);
-      }, 1 * 1000); // 1second
+      }, 5 * 100); // 1second
     }
   };
 
@@ -58,7 +58,7 @@ const Header = () => {
         )}
       </button>
 
-      <C.Img top="-10" left="52" position="absolute">
+      <C.Img>
         <img src={Img} alt="background img" />
       </C.Img>
     </C.Container>

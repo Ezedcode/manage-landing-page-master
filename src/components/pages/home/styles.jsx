@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import bck from "../../../img/bg-simplify-section-desktop.svg";
+import bck2 from "../../../img/bg-simplify-section-mobile.svg";
 
 export const Container = styled.div`
   h1,
@@ -18,14 +19,24 @@ export const Container = styled.div`
   width: 100vw;
   margin: auto;
   max-width: 1440px;
+  position: relative;
+  overflow-x: hidden;
   .img {
     position: absolute;
-    top: 72em;
+    top: 67em;
     left: -34rem;
     z-index: -1;
   }
   @media (max-width: 1024px) {
     width: 375px;
+    .img {
+      width: 26em;
+      top: 24em;
+      left: 17rem;
+      img {
+        width: 100%;
+      }
+    }
   }
 `;
 
@@ -118,7 +129,9 @@ export const Simplify = styled.section`
     display: flex;
     justify-content: space-between;
     justify-content: center;
-
+    background-image: url(${bck2});
+    background-repeat: no-repeat;
+    background-position: left center;
     div {
       height: 15em;
     }

@@ -24,6 +24,7 @@ export const NavBar = styled.nav`
   height: 27px;
   display: flex;
   align-items: start;
+  position: relative;
 
   a {
     color: hsl(228, 39%, 23%);
@@ -38,7 +39,7 @@ export const NavBar = styled.nav`
   @media (max-width: 1024px) {
     display: ${(props) => props.display};
     position: absolute;
-    top: 68px;
+    top: 26px;
     left: 0%;
     transition: translate(-50%, -50%);
     width: 100%;
@@ -51,19 +52,20 @@ export const NavBar = styled.nav`
       border-radius: 5px;
       padding: 20px 0;
       background-color: hsl(0, 0%, 98%);
-      box-shadow: 5px 70rem 23rem 100vh rgba(0, 0, 0, 0.5);
+      box-shadow: 5px 77rem 23rem 72rem rgba(0, 0, 0, 0.5);
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: space-around;
       margin: 0 auto;
+      z-index: 1;
     }
 
     .active {
-      animation: ${ShowNavbar} 1s;
+      animation: ${ShowNavbar} 0.5s;
     }
     .closeNavBar {
-      animation: ${CloseNavbar} 1s !important;
+      animation: ${CloseNavbar} 0.5s !important;
     }
   }
 `;

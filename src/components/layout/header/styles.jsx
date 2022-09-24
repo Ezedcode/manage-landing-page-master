@@ -14,6 +14,7 @@ const closeMenu = keyframes`
 export const Container = styled.div`
   width: 80%;
   margin: 3em auto 0 auto;
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -43,14 +44,21 @@ export const Container = styled.div`
     }
   }
   @media (max-width: 1024px) {
-    width: 255px;
+    width: 282px;
   }
 `;
 
 export const Img = styled.div`
   position: absolute;
-  top: ${(props) => props.top}em;
-  left: ${(props) => props.left}%;
-  right: ${(props) => props.right}%;
+  top: -20em;
+  left: 52%;
   z-index: -1;
+  @media (max-width: 1024px) {
+    top: -6em;
+    left: 8%;
+    width: 27em;
+    img {
+      width: 100%;
+    }
+  }
 `;
