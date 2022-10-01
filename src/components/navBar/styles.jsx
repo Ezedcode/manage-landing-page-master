@@ -41,7 +41,7 @@ export const NavBar = styled.nav`
     position: absolute;
     top: 26px;
     left: 0%;
-    transition: translate(-50%, -50%);
+
     width: 100%;
     .active,
     .closeNavBar {
