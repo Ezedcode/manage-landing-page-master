@@ -1,28 +1,32 @@
 import styled from "styled-components";
 export const Container = styled.div`
   width: 100%;
-  height: 23rem;
-  background-color: red;
+  height: 27rem;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  align-items: end;
   overflow: scroll;
+
   .container {
-    width: 80%;
-    background-color: blue;
     display: flex;
-    align-items: center;
-    justify-content: center;
+  }
+
+  & .hideScroll {
+    position: absolute;
+    width: 100%;
+    height: 3rem;
+    background-color: hsl(0, 0%, 100%);
+    top: 118.4rem;
   }
 `;
 export const ContainerItem = styled.div`
-  width: 555px;
   height: 227px;
   background-color: hsl(0, 0%, 98%);
   display: flex;
   align-items: center;
+  margin-bottom: 2rem;
+  margin: 0 1rem;
   div {
-    margin: auto;
+    padding: 0 2rem;
   }
   h3 {
     margin-top: 21px;

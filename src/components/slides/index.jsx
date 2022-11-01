@@ -6,12 +6,12 @@ import Img4 from "../../img/avatar-shanai.png";
 
 import Items from "./item";
 import * as C from "./stylesItem";
-//Anisha Li
+
 const SlidesWhatSaid = () => {
   const listItems = [
     {
       img: Img1,
-      name: "Get Started",
+      name: "Anisha Li",
       text: (
         <p>
           "Manage has supercharged our team's workflow. The ability to maintain
@@ -20,6 +20,7 @@ const SlidesWhatSaid = () => {
         </p>
       ),
     },
+
     {
       img: Img2,
       name: "Ali Bravo",
@@ -55,25 +56,6 @@ const SlidesWhatSaid = () => {
     },
   ];
 
-  function getWindowSize() {
-    const { innerWidth, innerHeight } = window;
-    return { innerWidth, innerHeight };
-  }
-
-  const [windowSize, setWindowSize] = useState(getWindowSize());
-
-  useEffect(() => {
-    function handleWindowResize() {
-      setWindowSize(getWindowSize());
-    }
-
-    window.addEventListener("resize", handleWindowResize);
-
-    return () => {
-      window.removeEventListener("resize", handleWindowResize);
-    };
-  }, []);
-
   return (
     <C.Container>
       <div className="container">
@@ -81,6 +63,7 @@ const SlidesWhatSaid = () => {
           <Items img={item.img} name={item.name} text={item.text} />
         ))}
       </div>
+      <div className="hideScroll"></div>
     </C.Container>
   );
 };
