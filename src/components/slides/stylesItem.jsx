@@ -23,7 +23,7 @@ export const Container = styled.div`
   }
 
   @media (max-width: 375px) {
-    height: 28rem;
+    height: 29rem;
     margin-top: 5rem;
     align-items: center;
     justify-content: center;

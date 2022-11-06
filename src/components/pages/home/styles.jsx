@@ -41,7 +41,8 @@ export const Container = styled.div`
 `;
 
 export const IllustrationIntro = styled.section`
-  width: 80%;
+  min-width: 71rem;
+  max-width: 79rem;
   margin: 62px auto;
   display: flex;
   align-items: center;
@@ -71,10 +72,15 @@ export const IllustrationIntro = styled.section`
 `;
 
 export const AboutManage = styled.section`
-  width: 80%;
+  min-width: 71rem;
+  max-width: 79rem;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
+
+  & .content {
+    width: 50%;
+  }
 
   @media (max-width: 1024px) {
     text-align: center;
@@ -156,8 +162,9 @@ export const Number = styled.span`
 `;
 
 export const List = styled.div`
-  width: 580px;
+  width: 100%;
   display: flex;
+  justify-content: end;
   h3 {
     padding-top: 10px;
   }

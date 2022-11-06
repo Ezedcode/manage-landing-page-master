@@ -12,8 +12,9 @@ const closeMenu = keyframes`
   }
 `;
 export const Container = styled.div`
-  width: 80%;
-  margin: 3em auto 0 auto;
+  min-width: 71rem;
+  max-width: 79rem;
+  margin: 62px auto;
   position: relative;
   display: flex;
   align-items: center;

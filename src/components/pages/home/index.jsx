@@ -1,9 +1,8 @@
-import React, { useState } from "react";
+import React from "react";
 import ImgIntro from "../../../img/illustration-intro.svg";
 import * as C from "./styles";
 import Button from "../../button";
 import ImgTablet from "../../../img/bg-tablet-pattern.svg";
-import * as S from "../../layout/header/styles";
 
 import SlidesWhatSaid from "../../slides";
 
@@ -37,7 +36,7 @@ const Home = () => {
           </C.Img>
         </C.IllustrationIntro>
         <C.AboutManage>
-          <div>
+          <div className="content">
             <h2>What's different about Manage?</h2>
             <p>
               Manage provides all the functionality your
@@ -49,7 +48,7 @@ const Home = () => {
               product teams.
             </p>
           </div>
-          <div>
+          <div className="content">
             <C.List>
               <div>
                 <h3>
