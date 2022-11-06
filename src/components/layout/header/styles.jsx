@@ -1,4 +1,5 @@
 import styled, { keyframes } from "styled-components";
+
 const showMenu = keyframes`
   to {
     transform: rotate(360deg);
@@ -12,8 +13,7 @@ const closeMenu = keyframes`
   }
 `;
 export const Container = styled.div`
-  min-width: 71rem;
-  max-width: 79rem;
+  width: 80%;
   margin: 62px auto;
   position: relative;
   display: flex;
@@ -43,9 +43,6 @@ export const Container = styled.div`
     @media (max-width: 1024px) {
       display: block;
     }
-  }
-  @media (max-width: 1024px) {
-    width: 282px;
   }
 `;
 
